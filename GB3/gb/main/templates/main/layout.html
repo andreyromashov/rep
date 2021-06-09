@@ -1,0 +1,298 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %} - Городская клиническая больница №3 им. Б. И. Альбертовича</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/media.css' %}">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js%22%3E"></script>
+
+    <link rel="stylesheet" href="{% static 'main/js/plugins/lightzoom/style.css' %}" type="text/css">
+    <script type="text/javascript" src="{% static 'main/js/plugins/lightzoom/lightzoom.js' %}"></script>
+
+    <script type="text/javascript"
+            src="{% static 'main/js/plugins/visually-impaired/js/visually_impaired.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'main/js/plugins/visually-impaired/css/visually_impaired.css' %}"
+          type="text/css">
+
+    <link rel="stylesheet" href="{% static 'main/css/media.css' %}" type="text/css">
+</head>
+
+<body>
+
+<audio>
+    <source id="color-black-white-mp3"
+            src="{% static 'main/js/plugins/visually-impaired/sounds/color-black-white.mp3' %}" type="audio/mpeg">
+    <source id="color-brown-beige-mp3"
+            src="{% static 'main/js/plugins/visually-impaired/sounds/color-brown-beige.mp3' %}" type="audio/mpeg">
+    <source id="color-darkblue-lightblue-mp3"
+            src="{% static 'main/js/plugins/visually-impaired/sounds/color-darkblue-lightblue.mp3' %}"
+            type="audio/mpeg">
+    <source id="color-green-darkbrown-mp3"
+            src="{% static 'main/js/plugins/visually-impaired/sounds/color-green-darkbrown.mp3' %}" type="audio/mpeg">
+    <source id="color-white-black-mp3"
+            src="{% static 'main/js/plugins/visually-impaired/sounds/color-white-black.mp3' %}" type="audio/mpeg">
+    <source id="font_down-mp3" src="{% static 'main/js/plugins/visually-impaired/sounds/font_down.mp3' %}"
+            type="audio/mpeg">
+    <source id="font_serif-mp3" src="{% static 'main/js/plugins/visually-impaired/sounds/font_serif.mp3' %}"
+            type="audio/mpeg">
+    <source id="font_sans-serif-mp3" src="{% static 'main/js/plugins/visually-impaired/sounds/font_sans-serif.mp3' %}"
+            type="audio/mpeg">
+    <source id="font_up-mp3" src="{% static 'main/js/plugins/visually-impaired/sounds/font_up.mp3' %}"
+            type="audio/mpeg">
+    <source id="image-black-white-off-mp3"
+            src="{% static 'main/js/plugins/visually-impaired/sounds/image-black-white-off.mp3' %}" type="audio/mpeg">
+    <source id="image-black-white-on-mp3"
+            src="{% static 'main/js/plugins/visually-impaired/sounds/image-black-white-on.mp3' %}" type="audio/mpeg">
+    <source id="image-off-mp3" src="{% static 'main/js/plugins/visually-impaired/sounds/image-off.mp3' %}"
+            type="audio/mpeg">
+    <source id="image-on-mp3" src="{% static 'main/js/plugins/visually-impaired/sounds/image-on.mp3' %}"
+            type="audio/mpeg">
+    <source id="large-letter-spacing-mp3"
+            src="{% static 'main/js/plugins/visually-impaired/sounds/large-letter-spacing.mp3' %}" type="audio/mpeg">
+    <source id="large-line-height-mp3"
+            src="{% static 'main/js/plugins/visually-impaired/sounds/large-line-height.mp3' %}" type="audio/mpeg">
+    <source id="open-mp3" src="{% static 'main/js/plugins/visually-impaired/sounds/open.mp3' %}" type="audio/mpeg">
+
+    <source id="sintez-on-mp3" src="{% static 'main/js/plugins/visually-impaired/sounds/sintez-on.mp3' %}"
+            type="audio/mpeg">
+    <source id="standard-letter-spacing-mp3"
+            src="{% static 'main/js/plugins/visually-impaired/sounds/standard-letter-spacing.mp3' %}" type="audio/mpeg">
+    <source id="standard-line-height-mp3"
+            src="{% static 'main/js/plugins/visually-impaired/sounds/standard-line-height.mp3' %}" type="audio/mpeg">
+    <source id="very-large-letter-spacing-mp3"
+            src="{% static 'main/js/plugins/visually-impaired/sounds/very-large-letter-spacing.mp3' %}"
+            type="audio/mpeg">
+    <source id="very-large-line-height-mp3"
+            src="{% static 'main/js/plugins/visually-impaired/sounds/very-large-line-height.mp3' %}" type="audio/mpeg">
+</audio>
+
+<header class="pb-5 pt-5">
+
+    <div class="container">
+        <div class="header__text d-flex flex-column align-items-center">
+            <a class="align-self-center" href="{% url 'main' %}"><h3>ГОРОДСКАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА №3 ИМ. Б. И.
+                АЛЬПЕРОВИЧА</h3></a>
+            <p class="w-75 text-right mr-4">ОГАУЗ "ГОРОДСКАЯ КЛИНИЧЕСКАЯ БОЛЬНИЦА №3 ИМ. Б. И. АЛЬПЕРОВИЧА"</p>
+        </div>
+    </div>
+    <div class="d-flex container flex-wrap">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent">
+                    <span class="navbar-toggle-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                             class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="dropdown">
+                    <a class="btn btn-light" href="#" aria-haspopup="true"
+                       aria-expanded="false">
+                        Главная
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="{% url 'history' %}">История</a>
+                        <a class="dropdown-item" href="{% url 'license' %}">Лицензия</a>
+                        <a class="dropdown-item" href="{% url 'clinicheskie_issledovaniya' %}">Клинические
+                            исследования</a>
+                        <a class="dropdown-item" href="{% url 'administration' %}">Администрация</a>
+                        <a class="dropdown-item" href="{% url 'regular_gallery' %}">Фотогалерея</a>
+                        <a class="dropdown-item"
+                           href="https://tabletka.online/staff/vacancy/search=-1&salary=0&organization=lpu49">Вакансии</a>
+                        <a class="dropdown-item" href="{% url 'inf_o_zacup' %}">Информация о закупках</a>
+                        <a class="dropdown-item" href="{% url 'o_nas' %}">О нас</a>
+                        <a class="dropdown-item" href="{% url 'otchet_ucher' %}">Отчеты учреждения</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="btn btn-light" href="#" aria-haspopup="true"
+                       aria-expanded="false">
+                        Поликлиника
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="https://er.mis.zdrav.tomsk.gov.ru/">Электронная регистратура</a>
+                        <a class="dropdown-item" href="{% url 'rezhim_raboti' %}">Режим работы</a>
+                        <a class="dropdown-item" href="{% url 'zapis_na_priem' %}">Записи на приём</a>
+                        <a class="dropdown-item" href="{% url 'berezhlivaya_poliklinika' %}">Бережливая полклинника</a>
+                        <a class="dropdown-item" href="{% url 'pravila_vnutrennego_rasporyadka_dly_potrebitelei' %}">Правило внутреннего распорядка для пациентов</a>
+                        <a class="dropdown-item" href="{% url 'info_o_disponserizacii' %}">Информация о
+                            диспансеризации</a>
+                        <a class="dropdown-item" href="{% url 'school_health' %}">Школа Здоровья</a>
+                        <a class="dropdown-item" href="{% url 'ocenit_rab' %}">Оценить работу поликлинники</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="btn btn-light" href="#" aria-haspopup="true"
+                       aria-expanded="false">
+                        Пациенту
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="{% url 'inf_o_oms' %}">Информация по ОМС</a>
+                        <a class="dropdown-item" href="{% url 'uslovia_okazania_mp' %}">Условия оказания медицинской
+                            помощи</a>
+                        <a class="dropdown-item" href="{% url 'contacts' %}">Контакты</a>
+                        <a class="dropdown-item" href="{% url 'uchastok' %}">Участок</a>
+                        <a class="dropdown-item" href="{% url 'lecarstvenoe_obespechenie' %}">Лекарственное
+                            обеспечение</a>
+                        <a class="dropdown-item" href="#">Задать вопрос</a>
+                        <a class="dropdown-item" href="{% url 'med_ekspertiza' %}">Медико-социальная экспертиза</a>
+                        <a class="dropdown-item" href="{% url 'pocazatel_kachestva' %}">Показатели качества и
+                            доступности медицинской помощи</a>
+                        <a class="dropdown-item" href="{% url 'tellefon_links' %}">Полезные телефоны и ссылки</a>
+                        <a class="dropdown-item" href="{% url 'pamitka_o_teroristah' %}">Памятка о действиях при
+                            террористической угрозе</a>
+                        <a class="dropdown-item" href="{% url 'podgotovka_k_diagnosticheskim_issledovaniyam' %}">Подготовка к диагностическим исследованиям</a>
+                        <a class="dropdown-item" href="{% url 'otziv' %}">Отзывы</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="btn btn-light" href="#" aria-haspopup="true"
+                       aria-expanded="false">
+                        Платные услуги
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Частным лицам</a>
+                        <a class="dropdown-item" href="#">Юридическим лицам</a>
+                        <a class="dropdown-item" href="#">Расписание и режим работы</a>
+                        <a class="dropdown-item" href="#">Контакты</a>
+                        <a class="dropdown-item" href="#">Информация</a>
+                        <a class="dropdown-item" href="#">Важная информация</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="btn btn-light" href="#" aria-haspopup="true"
+                       aria-expanded="false">
+                        Медицинский туризм
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Иногороднему пациенту</a>
+                        <a class="dropdown-item" href="#">Иностранному пациенту</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="btn btn-light" href="#" aria-haspopup="true"
+                       aria-expanded="false">
+                        Medical Tourism
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Contact Us</a>
+                        <a class="dropdown-item" href="#">Information</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a class="btn btn-light" href="#" aria-haspopup="true"
+                       aria-expanded="false">
+                        Неотложная помощь
+                    </a>
+                </div>
+
+                <div class="dropdown">
+                    <a class="btn btn-light" href="#" aria-haspopup="true"
+                       aria-expanded="false">
+                        Отделения
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Общая информация по стационару</a>
+                        <a class="dropdown-item" href="#">Аптека</a>
+                        <a class="dropdown-item" href="#">Клинико-диагностические исследования</a>
+                        <a class="dropdown-item" href="#">Гастроэнтерологическое отделение</a>
+                        <a class="dropdown-item" href="#">Инфекционное отделение</a>
+                        <a class="dropdown-item" href="#">Отделение клинической фармакологии</a>
+                        <a class="dropdown-item" href="#">ЛОР отделение</a>
+                        <a class="dropdown-item" href="#">Неврологическое отделение</a>
+                        <a class="dropdown-item" href="#">Отделение анестезиологии и реанимации</a>
+                        <a class="dropdown-item" href="#">Отделение гнойной хирургии</a>
+                        <a class="dropdown-item" href="#">Пульмонологическое отделение</a>
+                        <a class="dropdown-item" href="#">Рентгенологическое отделение</a>
+                        <a class="dropdown-item" href="#">Терапевтическое отделение</a>
+                        <a class="dropdown-item" href="#">Урологическое отделение</a>
+                        <a class="dropdown-item" href="#">Эндоскопическое отделение</a>
+                        <a class="dropdown-item" href="#">Хирургическое отделение</a>
+                        <a class="dropdown-item" href="#">Физиотерапевтическое отделение</a>
+                        <a class="dropdown-item" href="#">Отделение ультразвуковой диагностики</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<button class="visually_impaired-open btn butn">Версия сайта для слабовидящих</button>
+
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+
+<footer>
+    <div class="container d-flex pt-5 pb-5 mt-5">
+        <div class="d-flex flex-column w-50">
+            <h5>ОГАУЗ "ГКБ №3"</h5>
+            <p>634045, г. Томск, ул. Нахимова, д.3 <br> Приемная главного врача</p>
+            <div>
+                <a href="#">Телефон:</a>
+                <span>Приемная главного врача+7(3822) 41-47-85</span>
+            </div>
+            <div>
+                <a href="#">Почта:</a>
+                <span>romashov.fl@gmail.com</span>
+            </div>
+        </div>
+        <div class="d-flex flex-column w-50">
+            <p class="fw-bold">Меню</p>
+            <a href="#">Главная</a>
+            <a href="#">Поликлиника</a>
+            <a href="#">Пациенту</a>
+            <a href="#">Платные услуги</a>
+            <a href="#">Медицинский туризм</a>
+            <a href="#">Medical tourism</a>
+            <a href="#">Неотложная помощь</a>
+            <a href="#">Отделения</a>
+        </div>
+        <div class="d-flex flex-column w-25">
+            <p class="fw-bold">Последние новости</p>
+            <a href="#">
+                В Томской области пациенты после COVID-19 могут пройти реабилитацию онлайн.
+                Записаться можно на сайте covidtomsk.ru
+            </a>
+            <a href="#">
+                Губернатор Сергей Жвачкин продлил режим ограничений в Томской области до 31 марта
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+

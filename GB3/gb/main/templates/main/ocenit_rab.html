@@ -1,0 +1,24 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Оценить работу поликлинники{% endblock %}
+
+{% block content %}
+{% load static %}
+<section class="container pt-5 pb-5">
+    <h4 class="mb-5">ОЦЕНИТЬ РАБОТУ ПОЛИКЛИННИКИ</h4>
+
+    <b>
+        Оцените удовлетворённость оказанными услугами в поликлиническом отделении №1
+    </b>
+
+    <img src="{% static 'main/img/ocenit_rab/PO1.png' %}" class="w-75"/>
+
+    <b>
+        Оцените удовлетворённость оказанными услугами в поликлиническом отделении №2
+    </b>
+
+    <img src="{% static 'main/img/ocenit_rab/PO2.png' %}" class="w-75"/>
+</section>
+{% endblock %}
+
+

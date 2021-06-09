@@ -1,0 +1,19 @@
+@media (max-width : 780px) {
+    footer > div {
+        flex-flow: column !important;
+        flex-direction: column !important;
+    }
+    footer > div > div, footer > div > div > * {
+        align-self: center;
+        text-align: center;
+    }
+    footer > div > div > a:not(:first-child) {
+        margin-top: 10px;
+    }
+    footer > div > div:not(:first-child) > p {
+        margin-top: 35px;
+    }
+    footer > div > div > a:last-child {
+        margin-bottom: 15px;
+    }
+}

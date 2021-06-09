@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Отчеты о проведении специальной оценки условий труда{% endblock %}
+
+{% block content %}
+{% load static %}
+<section class="container pt-5 pb-5">
+    <h4 class="mb-5">ОТЧЕТЫ О ПРОВЕДЕНИИ СПЕЦИАЛЬНОЙ ОЦЕНКИ УСЛОВИЙ ТРУДА</h4>
+    <div>
+        <a href="{% static 'main/docx/otchets_o_provedenii/ocenka2017.pdf' %}">Отчёт о проведении специальной оценки условий труда
+            2017 (pdf)</a>
+        <br>
+
+        <a href="{% static 'main/docx/otchets_o_provedenii/ocenka2018.pdf' %}">Отчёт о проведении специальной оценки условий труда
+            2018 (pdf)</a>
+        <br>
+    </div>
+</section>
+{% endblock %}
+
+

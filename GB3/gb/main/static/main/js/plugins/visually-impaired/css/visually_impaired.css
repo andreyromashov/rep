@@ -1,0 +1,180 @@
+.visually-impaired {
+    background-color: white !important;
+}
+.visually-impaired p {
+    color: black !important;
+}
+.visually-impaired__buttons-color > button:first-child {
+    color: black;
+    background-color: white;
+    border: .5px solid rgba(0,0,0,0.1);
+}
+.visually-impaired__buttons-color > button:nth-child(2) {
+    color: white;
+    background-color: black;
+}
+.visually-impaired__buttons-color > button:nth-child(3) {
+    color: #063462;
+    background-color: #9dd1ff;
+}
+.visually-impaired__buttons-color > button:nth-child(4) {
+    color: #4d4b43;
+    background-color: #f7f3d6;
+}
+.visually-impaired__buttons-color > button:nth-child(5) {
+    color: #a9e44d;
+    background-color: #3b2716;
+}
+
+.no-pictures {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 2px dashed black;
+}
+.black-and-white-pictures {
+    filter: grayscale(100);
+}
+
+.black-and-white {
+    color: black !important;
+    background-color: white !important;
+}
+button.black-and-white {
+    border: 1px solid black !important;
+}
+button.black-and-white:hover {
+    color: white !important;
+    background-color: black !important;
+}
+div.dropdown > a.black-and-white:hover {
+    color: white !important;
+    background-color: black !important;
+}
+
+a.black-and-white, p.black-and-white, h1.black-and-white, h2.black-and-white, h3.black-and-white, h4.black-and-white, h5.black-and-white {
+    background-color: rgba(0,0,0,0) !important;
+}
+
+
+.white-and-black {
+    color: white !important;
+    background-color: black !important;
+}
+button.white-and-black {
+    border: 1px solid white !important;
+}
+button.white-and-black:hover {
+    color: black !important;
+    background-color: white !important;
+}
+a.white-and-black, p.white-and-black, h1.white-and-black, h2.white-and-black, h3.white-and-black, h4.white-and-black, h5.white-and-black {
+    background-color: rgba(0,0,0,0);
+}
+a.white-and-black.dropdown-item:hover {
+    color: black !important;
+    background-color: white !important;
+}
+
+.blue-and-lightblue {
+    color: #063462 !important;
+    background-color: #9dd1ff !important;
+}
+button.white-and-black {
+    border: 1px solid #063462 !important;
+}
+button.white-and-black:hover {
+    color: #9dd1ff !important;
+    background-color: #063462 !important;
+}
+a.blue-and-lightblue, p.blue-and-lightblue, h1.blue-and-lightblue, h2.blue-and-lightblue, h3.blue-and-lightblue, h4.blue-and-lightblue, h5.blue-and-lightblue {
+    background-color: rgba(0,0,0,0);
+}
+a.blue-and-lightblue.dropdown-item:hover {
+    color: #9dd1ff !important;
+    background-color: #063462 !important;
+}
+
+
+.brown-and-beige {
+    color: #4d4b43 !important;
+    background-color: #f7f3d6!important;
+}
+button.brown-and-beige {
+    border: 1px solid #f7f3d6 !important;
+}
+button.brown-and-beige:hover {
+    color: #4d4b43 !important;
+    background-color: #f7f3d6 !important;
+}
+a.brown-and-beige, p.brown-and-beige, h1.brown-and-beige, h2.brown-and-beige, h3.brown-and-beige, h4.brown-and-beige, h5.brown-and-beige {
+    background-color: rgba(0,0,0,0);
+}
+a.brown-and-beige.dropdown-item:hover {
+    color: #4d4b43 !important;
+    background-color: #f7f3d6 !important;
+}
+
+.green-and-darkbrown {
+    color: #a9e44d !important;
+    background-color: #3b2716!important;
+}
+button.green-and-darkbrown {
+    border: 1px solid #a9e44d !important;
+}
+button.green-and-darkbrown:hover {
+    color: #a9e44d !important;
+    background-color: #3b2716 !important;
+}
+a.green-and-darkbrown, p.green-and-darkbrown, h1.green-and-darkbrown, h2.green-and-darkbrown, h3.green-and-darkbrown, h4.green-and-darkbrown, h5.green-and-darkbrown {
+    background-color: rgba(0,0,0,0);
+}
+a.green-and-darkbrown.dropdown-item:hover {
+    color: #a9e44d !important;
+    background-color: #3b2716 !important;
+}
+
+.line-height-normal {
+    line-height: 1.5 !important;
+}
+.line-height-large {
+    line-height: 2 !important;
+}
+.line-height-very-large {
+    line-height: 2.5 !important;
+}
+
+.letter-interval-normal {
+    letter-spacing: normal !important;
+}
+.letter-interval-large {
+    letter-spacing: 2px !important;
+}
+.letter-interval-very-large {
+    letter-spacing: 4px !important;
+}
+
+.text-serif {
+    font-family: inherit serif;
+}
+.text-sans-serif {
+    font-family: inherit sans-serif;
+}
+
+
+.btn-change_voice-on {
+    width: 50px;
+    height: 38px;
+    background-size: contain;
+    background-image: url('../icons/voice_on.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.btn-change_voice-off {
+    width: 50px;
+    height: 38px;
+    background-size: contain;
+    background-image: url('../icons/voice_off.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}

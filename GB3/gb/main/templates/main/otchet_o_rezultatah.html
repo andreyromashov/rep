@@ -1,0 +1,23 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Отчет о результатах деятельности областного государственного учреждения и об использовании закрепленного за ними имущества{% endblock %}
+
+{% block content %}
+{% load static %}
+<section class="container pt-5 pb-5">
+    <h4 class="mb-5">ОТЧЕТ О РЕЗУЛЬТАТАХ ДЕЯТЕЛЬНОСТИ ОБЛАСТНОГО ГОСУДАРСТВЕННОГО УЧРЕЖДЕНИЯ И ОБ ИСПОЛЬЗОВАНИИ ЗАКРЕПЛЕННОГО ЗА НИМИ ИМУЩЕСТВА</h4>
+    <div>
+        <a href="{% static 'main/docx/otchets_o_provedenii/ocenka2017.pdf' %}">Отчёт о проведении специальной оценки
+            условий труда
+            2017 (pdf)</a>
+        <br>
+
+        <a href="{% static 'main/docx/otchets_o_provedenii/ocenka2018.pdf' %}">Отчёт о проведении специальной оценки
+            условий труда
+            2018 (pdf)</a>
+        <br>
+    </div>
+</section>
+{% endblock %}
+
+

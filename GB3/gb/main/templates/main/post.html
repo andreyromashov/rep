@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+
+<section class="container main-news pt-5 pb-5">
+    <h4>{{post.title}}</h4>
+
+    {% if post.photo %}
+    <p><img class="img-article" src="{{post.photo.url}}"></p>
+    {% endif %}
+
+    {{post.content|linebreaks}}
+</section>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}О нас{% endblock %}
+
+{% block content %}
+{% load static %}
+<section class="container pt-5 pb-5">
+    <h4 class="mb-5">О НАС</h4>
+    <div>
+        <a href="{% static 'main/docx/o_nas/ustav_gkb3.pdf' %}"> Устав областного государственного автономного
+            учреждения
+            здравоохранения «Городская клиническая больница №3 им. Б.И. Альперовича»</a>
+        <br>
+
+        <a href="{% static 'main/docx/o_nas/izm_ustav_gkb3.pdf' %}">Изменения в Устав областного государственного
+            автономного учреждения здравоохранения «Городская клиническая больница № 3»,</a>
+        <br>
+
+        <a href="https://bus.gov.ru/pub/info-card/81561?activeTab=3&organizationGroup=518">Результаты независимой оценки
+            качества по ОГАУЗ «Городская
+            клиническая больница №3 им. Б. И. Альперовича»</a>
+        <br>
+
+        <a href="{% url 'svedenia_rezistracii' %}">Сведения о регистрации и учредителях</a>
+        <br>
+
+        <a href="{% static 'main/docx/o_nas/Структура-управления.pdf' %}">Структура управления ОГАУЗ «Городская
+            клиническая больница №3 им. Б.И. Альперовича»</a>
+        <br>
+        <a href="{% static 'main/docx/o_nas/Медицинские-работники.xlsx' %}">Перечень медицинских работников (скачать)</a>
+        <br>
+    </div>
+</section>
+{% endblock %}
+
+

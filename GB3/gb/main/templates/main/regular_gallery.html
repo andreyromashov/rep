@@ -1,0 +1,17 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+{% load static %}
+<section class="container pb-5 pt-5">
+    <h4 class="mb-5">ОТКРЫТИЕ МЕМОРИАЛЬНОЙ ДОСКИ БОРИСУ АЛЬПЕРОВИЧУ</h4>
+
+    <div class="fotorama">
+        <img src="{% static 'main/img/regular_gallery/577A0001.jpg' %}">
+        <img src="{% static 'main/img/regular_gallery/577A0001.jpg' %}">
+    </div>
+</section>
+{% endblock %}
+
+

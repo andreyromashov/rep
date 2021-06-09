@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Главная{% endblock %}
+{% load static %}
+{% block content %}
+<section class="container main-news pt-5 pb-5">
+
+    {% for p in posts %}
+    <div class="d-flex flex-row main-news__item mb-5">
+        {% if p.photo %}
+        <p><img class="img-article-left" src="{{p.photo.url}}"></p>
+        {% endif %}
+        <div class="ml-3">
+            <h5><a href="{% url 'post' p.pk %}">{{p.title}}</a></h5>
+            <p>{{p.content|linebreaks|truncatewords:25}}</p>
+        </div>
+    </div>
+    {% endfor %}
+
+</section>
+{% endblock %}

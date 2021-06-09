@@ -1,0 +1,22 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Отчёт учереждения{% endblock %}
+
+{% block content %}
+{% load static %}
+<section class="container pt-5 pb-5">
+    <h4 class="mb-5">ОТЧЕТЫ УЧРЕЖДЕНИЯ</h4>
+    <div>
+        <a href="{% url 'otchet_o_povedenii' %}"> Отчет о проведении специальной оценки условий труда</a>
+        <br>
+
+        <a href="{% url 'otchet_o_rezultatah' %}">Отчет о результатах деятельности областного
+            государственного учреждения и об использовании закрепленного за ними имущества
+
+        </a>
+        <br>
+    </div>
+</section>
+{% endblock %}
+
+

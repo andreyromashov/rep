@@ -1,0 +1,31 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+<section class="container pt-5 pb-5">
+    <h4 class="mb-5 text-uppercase">Обратная связь</h4>
+    <form method="post" action="#">
+        <div class="form-group">
+            <label for="inputEmail">Почта (обязательно)</label>
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                   placeholder="Введите e-mail">
+        </div>
+        <div class="form-group">
+            <label for="inputName">Ваше имя (обязательно)</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Введите имя">
+        </div>
+        <div class="form-group">
+            <label for="inputSubject">Тема (обязательно)</label>
+            <input type="text" class="form-control" id="inputSubject" placeholder="Введите тему">
+        </div>
+        <div class="form-group">
+            <label for="textareaMessage">Сообщение</label>
+            <textarea class="form-control" id="textareaMessage" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Отправить</button>
+    </form>
+</section>
+{% endblock %}
+
+

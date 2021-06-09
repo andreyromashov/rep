@@ -1,0 +1,35 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Отзывы{% endblock %}
+
+{% block content %}
+{% load static %}
+<section class="container pb-5 pt-5">
+    <h4 class="text-uppercase mb-3 pb-3">ОТЗЫВЫ</h4>
+
+    <form action="{% url 'otziv' %}" method="post">
+        {% csrf_token %}
+
+        {% for f in form %}
+        <p><label class="form-label" for="{{ f.id_for_label }}">{{f.label}}: </label>{{ f }}</p>
+        <div class="form-error">{{ f.errors }}</div>
+        {% endfor %}
+
+
+        <button class="form-button " type="submit">Добавить</button>
+    </form>
+
+    <!--
+        {% for review in reviews %}
+        <tr class='success'>
+            <td>{{ review.id }}</td>
+            <td>{{ review.name }}</td>
+           <td>{{ review.doctor }}</td>
+            <td>{{ review.content }}</td>
+        </tr>
+        {% endfor %}
+    -->
+</section>
+{% endblock %}
+
+
